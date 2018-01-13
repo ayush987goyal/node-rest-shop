@@ -9,6 +9,7 @@ const orderRoutes = require('./api/routes/orders');
 
 // logging and parsing
 app.use(morgan('dev'));
+app.use('/uploads', express.static('uploads'))
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
